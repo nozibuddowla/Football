@@ -320,3 +320,30 @@ a.news-links {
     text-transform: uppercase;
 }
 /* Highlights end */
+
+/* footer start */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.footer-logo img{
+    width:480px;
+    height:110px;
+}
+.social-icons{
+    margin-top: 20px;
+}
+.social-icons ul li {
+    float: left;
+}
+footer .social-fab {
+    background-color: lightsteelblue;
+    border-radius: 50%;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 15px;
+}
+/* footer end */
