@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mediaQuery.css">
+</head>
+<body>
+    <!-- header start -->
+    <header class="header">
+        <nav class="navbar">
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="/index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Clubs</a></li>
+                <li class="nav-item"><a href="" class="nav-link">World Cup 2023</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Upcoming Matches</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+            <div class="btn-container">
+                <a href="https://copaamerica.com/en/" class="log-btn" target="_blank">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>Login</span>
+                </a>
+            </div>
+        </nav>
+
+        <section class="banner-section">
+            <div class="container">
+                <div class="banner">
+                    <div class="heading">
+                        <h1>Conmebol Copa America 2021</h1>
+                        <div class="btn-container">
+                            <a href="https://www.youtube.com/copaamerica" class="live-btn effect-1" target="_blank">Watch
+                                Live
+                            </a>
+                        </div>
+                    </div>
+                    <div class="poster">
+                        <img src="images/banner.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- header end -->
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/bde9738801.js" crossorigin="anonymous"></script>
+
+    <!-- hamburger menu -->
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }
+    </script>
+</body>
+</html>

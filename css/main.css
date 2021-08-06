@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins',
+        sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 70px 0px;
+}
+
+.header {
+    background: #2D25A0;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem 4rem;
+}
+
+.hamburger {
+    display: none;
+}
+.bar {
+    display: block;
+    width: 18px;
+    height: 2px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #FFFFFF;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 2.25rem;
+}
+
+.nav-link {
+    font-size: 1rem;
+    font-weight: 5000;
+    color: #FFFFFF;
+}
+
+.nav-link:hover {
+    color: black;
+}
+a.log-btn {
+    background: #E02C6D;
+    padding: 10px 24px;
+    color: #FFFFFF;
+    transition: all 0.5s;
+}
+
+.log-btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.log-btn:hover span {
+    padding-right: 25px;
+}
+
+.log-btn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+a.log-btn i {
+    margin-right: 8px;
+}
+.banner {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding-bottom: 86px;
+    margin-top: 50px;
+}
+
+.heading {
+    margin-right: 130px;
+    padding-left: 100px;
+}
+
+.heading h1 {
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 80px;
+    color: #FFFFFF;
+    margin-bottom: 27px;
+}
+
+a.live-btn {
+    width: 172px;
+    height: 44px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    text-transform: capitalize;
+    background: #E02C6D;
+    padding: 10px 24px;
+    color: #FFFFFF;
+    overflow: hidden;
+}
+
+.live-btn.effect-1 {
+    transition: all 0.2s linear 0s;
+}
+
+.live-btn.effect-1:before {
+    content: "\f061";
+    font-family: FontAwesome;
+    font-size: 15px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    height: 100%;
+    width: 40px;
+    transition: all 0.2s linear 0s;
+}
+
+.live-btn.effect-1:hover {
+    text-indent: -20px;
+}
+
+.live-btn.effect-1:hover:before {
+    opacity: 1;
+    text-indent: 0px;
+}
+a.live-btn i {
+    margin-left: 8px;
+}
+
+.poster img {
+    width: 556px;
+    height: 440px;
+    margin-left: 110px;
+}
