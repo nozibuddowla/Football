@@ -90,9 +90,6 @@
     .testimonial-col:hover {
         transform: scale(1.1);
     }
-    .highlights {
-        width: 100%;
-    }
 
     .highlights-detail {
         grid-template-columns: repeat(1, 1fr);
@@ -100,6 +97,14 @@
         padding-top: 18px;
     }
 
+    .highlights{
+        width: 85%;
+        margin:  auto;
+    }
+
+    .news-section {
+        width: 85%;
+    }
     .footer-logo img {
         width: 100%;
     }
@@ -173,16 +178,23 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .highlights {
-        width: 100%;
+    .highlights-container{
+        padding: 20%;
     }
 
     .highlights-detail {
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 13px;
-        padding-top: 18px;
+        justify-self: center;
+        grid-gap: 27px;
+        
     }
 
+    .news-section {
+        width: 85%;
+    }
+    .footer-logo img {
+        width: 100%;
+    }
     .social-icons ul li a {
         width: 100%;
         margin: 10px;

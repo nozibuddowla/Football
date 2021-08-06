@@ -249,3 +249,74 @@ a.live-btn i {
 .user-info small{
     color: #009688;
 }
+
+/* Highlights start */
+.highlights-title {
+    font-weight: 700;
+    color: #173562;
+    margin-bottom: 20px;
+}
+
+.highlights-detail {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 27px;
+    padding-top: 36px;
+    cursor: pointer;
+}
+
+.highlights {
+    width: 370px;
+    min-height: 420px;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.highlights img {
+    width: 100%;
+    border-radius: 5px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: #fff;
+
+}
+
+.highlights span {
+    color: #707070;
+    text-transform: uppercase;
+    font-family: Ubuntu,
+        Arial,
+        sans-serif;
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.highlights p {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: Ubuntu,
+        Arial,
+        sans-serif;
+    color: rgba(0, 0, 0, .8) !important;
+}
+
+a.news-links {
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.news-section {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7f7f7;
+    padding: 20px;
+    cursor: pointer;
+    width: 100%;
+    color: #707070;
+    text-transform: uppercase;
+}
+/* Highlights end */
