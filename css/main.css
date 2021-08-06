@@ -278,7 +278,15 @@ a.live-btn i {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     background-color: #fff;
+    -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
 
+.highlights:hover img {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
 }
 
 .highlights span {
