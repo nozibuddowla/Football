@@ -19,8 +19,7 @@ a {
 .container {
     width: 100%;
     max-width: 1200px;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0 auto;
     padding: 70px 0px;
 }
 
@@ -163,4 +162,90 @@ a.live-btn i {
     width: 556px;
     height: 440px;
     margin-left: 110px;
+}
+
+.profiles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+}
+
+.profile {
+    width: 330px;
+    min-height: 474px;
+    height: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    padding: 15px;
+}
+
+.profile:hover {
+    transform: translateY(-4px);
+}
+
+.profile img {
+    width: 300px;
+    height: 256px;
+}
+
+
+
+#testimonial{
+    width:100% ;
+    padding-top: 70px 0;
+}
+.testimonial-row{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+}
+.testimonial-col{
+    width: 330px;
+    min-height: 200px;
+    height: 100%;
+    margin-bottom: 30px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px 2px rgba(29, 161, 242, 0.3);
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+}
+.testimonial-col:hover {
+    transform: scale(1.3);
+}
+.testimonial-col p{
+    font-size: 14px;
+
+}
+.title-text{
+    text-align: center;
+    margin: auto;
+    padding-bottom: 70px;
+
+}
+.title-text h1{
+    font-size: 40px;
+    color: black;
+    font-weight: bold;
+    display: inline-block;
+}
+.user{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.user img{
+    width: 40px;
+    margin-right: 20px;
+    border-radius: 3px;
+}
+.user-info .fab{
+    margin-left:10px ;
+    color:#27c0ff;
+    font-size: 20px;
+}
+.user-info small{
+    color: #009688;
 }

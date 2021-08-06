@@ -70,6 +70,26 @@
         grid-template-columns: repeat(1, 1fr);
     }
 
+    .profile{
+        width: 85%;
+        margin: auto;
+    }
+    .profile img {
+        width: 100%;
+    }
+
+    .testimonial-row{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .testimonial-col{
+        width: 85%;
+        margin: auto;
+        margin-bottom: 15px;
+        padding: 15px;
+    }
+    .testimonial-col:hover {
+        transform: scale(1.1);
+    }
     .highlights {
         width: 100%;
     }
